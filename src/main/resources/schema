@@ -1,0 +1,18 @@
+drop table if exists car;
+
+create table car
+(
+    id    int auto_increment primary key,
+    model varchar(50),
+    year  varchar(5),
+    maker varchar(20),
+    identifier int unsigned
+);
+
+insert into car (id, model, year, maker, identifier)
+values (1, 'focus', '2012', 'ford', 5),
+       (2, 'prius', '2015', 'toyota', 4),
+       (3, 'camry', '2020', 'toyota', 3),
+       (4, 'fiesta', '2018', 'ford', 2),
+       (5, 'swift', '2015', 'suzuki', 1);
+
