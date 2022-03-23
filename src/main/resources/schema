@@ -1,0 +1,17 @@
+drop table if exists inventory;
+
+create table inventory
+(
+    id       int auto_increment primary key,
+    identifier   int unsigned,
+    quantity int unsigned,
+    price    int unsigned
+
+);
+
+insert into inventory (id, identifier, quantity, price)
+values (1, 1, 15, 10000),
+       (2, 2, 18, 15000),
+       (3, 3, 22, 12000),
+       (4, 4, 45, 20000),
+       (5, 5, 10, 22000);
